@@ -13,9 +13,9 @@ RUN_VER = 'community'
 # 应用基本信息配置 (请按照说明修改)
 # ==============================================================================
 # 在蓝鲸智云开发者中心 -> 点击应用ID -> 基本信息 中获取 APP_ID 和 APP_TOKEN 的值
-APP_ID = ''
-APP_TOKEN = ''
-BK_PAAS_HOST = ''
+APP_ID = 'sops'
+APP_TOKEN = '21c02cf5-049b-4932-9165-3b1d42764940'
+BK_PAAS_HOST = 'http://paas.2819434.cn'
 
 APP_ID = os.environ.get('APP_ID', APP_ID)
 APP_TOKEN = os.environ.get('APP_TOKEN', APP_TOKEN)
@@ -91,6 +91,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # OTHER 3rd Party App
     'account',
+    'custom_atoms',
 )
 
 INSTALLED_APPS += INSTALLED_APPS_CUSTOM
